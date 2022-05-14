@@ -36,25 +36,25 @@ function RecipeCreate({createRecipe}) {
             <tr>
               <td>
                 <label htmlFor="name">
-                  <input id="name" name="name" placeholder="Name" onChange={handleChange} value={formData.name}/>
+                  <input id="name" name="name" placeholder="Name" onChange={handleChange} value={formData.name} required/>
                 </label>
               </td>
               <td>
                 <label htmlFor="cuisine">
-                  <input id="cuisine" name="cuisine" placeholder="Cuisine" onChange={handleChange} value={formData.cuisine}/>
+                  <input id="cuisine" name="cuisine" placeholder="Cuisine" onChange={handleChange} value={formData.cuisine} required/>
                 </label>
               </td>
               <td>
                 <label htmlFor="photo">
-                  <input id="photo" name="photo" type="url" placeholder="URL" onChange={handleChange} value={formData.photo}/>
+                  <input id="photo" name="photo" type="url" placeholder="URL" onChange={handleChange} value={formData.photo} required/>
                 </label>
               </td>
               <td>
-                <textarea  id="ingredients" name="ingredients" placeholder="Ingredients" rows="2" onChange={handleChange} value={formData.ingredients}>
+                <textarea  id="ingredients" name="ingredients" placeholder="Ingredients" rows="2" onChange={handleChange} value={formData.ingredients} required>
                 </textarea>
               </td>
               <td>
-                <textarea id="preparation" name="preparation" placeholder="Preparation" rows="2" onChange={handleChange} value={formData.preparation}>
+                <textarea id="preparation" name="preparation" placeholder="Preparation" rows="2" onChange={handleChange} value={formData.preparation} required>
                 </textarea>
               </td>
               <td>
